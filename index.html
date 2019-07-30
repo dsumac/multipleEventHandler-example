@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Multiple eventHandler example</title>
+    <script type="text/javascript" src="external_1.js"></script>
+</head>
+
+<body>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('First listener callback execution', event);
+        });
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            console.log('Second listener callback execution', event);
+        });
+    </script>
+    <script type="text/javascript" src="external_2.js"></script>
+</body>
+</html>
